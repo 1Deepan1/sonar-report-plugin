@@ -9,7 +9,7 @@ public class SonarReport {
 	
 	
 	public void generate(){
-		log.info("Test Custom Report Plugin....");
+		log.info("Test Custom Report Plugin");
 	}
 
 }
