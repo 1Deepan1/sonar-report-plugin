@@ -27,8 +27,9 @@ public class SonarReportJob implements org.sonar.api.batch.PostJob,
 	}
 
 	public void executeOn(Project project, SensorContext context) {
-		
+		LOG.info("Inside the test custom plugin");
 		SonarReport report = new SonarReport();
+		report.generate();
 		
 	}
 }
