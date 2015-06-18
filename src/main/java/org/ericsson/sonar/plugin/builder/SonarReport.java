@@ -10,6 +10,17 @@ public class SonarReport {
 	
 	public void generate(){
 		log.info("Test Custom Report Plugin....");
+		SonarMetrics sonarMetrics = new SonarMetrics();
+		String[] metrics= sonarMetrics.getMetricsName();
+		SonarResources sonarResources = new SonarResources(metrics);
+		System.out.println("<final>"+sonarResources.getAllResources()+"</final>");
+	}
+	
+		
+	public static void main(String[] args) {
+		//System.setProperty(Simplelo.DEFAULT_LOG_LEVEL_KEY, "TRACE");
+		SonarReport r = new SonarReport();
+		r.generate();
 	}
 
 }

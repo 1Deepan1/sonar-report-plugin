@@ -29,6 +29,6 @@ public class SonarReportJob implements org.sonar.api.batch.PostJob,
 	public void executeOn(Project project, SensorContext context) {
 		
 		SonarReport report = new SonarReport();
-		report.generate();
+		
 	}
 }
