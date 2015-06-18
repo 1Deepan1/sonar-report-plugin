@@ -21,7 +21,6 @@ public class SonarReport {
 		//System.setProperty(Simplelo.DEFAULT_LOG_LEVEL_KEY, "TRACE");
 		SonarReport r = new SonarReport();
 		r.generate();
-		log.info("Test Custom Report Plugin");
 	}
 
 }
