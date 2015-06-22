@@ -14,6 +14,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 
 import org.ericsson.sonar.exception.SonarReporException;
+import org.sonar.api.config.Settings;
 import org.sonar.api.utils.SonarException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -25,8 +26,8 @@ public class SonarMetrics extends SonarClient {
 	static XPathFactory factory;
 	static XPath xpath;
 
-	public SonarMetrics() {
-		super();
+	public SonarMetrics(Settings settings) {
+		super(settings);
 		factory = XPathFactory.newInstance();
 		xpath = factory.newXPath();
 
@@ -38,8 +39,8 @@ public class SonarMetrics extends SonarClient {
 	}
 
 	public String[] getMetricsName() {
-		String[] tmpArray=null;
-		String metricsXml=get();
+		String[] tmpArray = null;
+		String metricsXml = get();
 		try {
 			Document doc = DocumentBuilderFactory
 					.newInstance()
@@ -59,7 +60,7 @@ public class SonarMetrics extends SonarClient {
 		} catch (Exception e) {
 			throw new SonarReporException(e);
 		}
-		
+
 		return tmpArray;
 	}
 

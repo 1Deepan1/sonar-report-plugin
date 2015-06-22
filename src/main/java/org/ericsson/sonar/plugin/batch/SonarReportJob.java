@@ -1,5 +1,6 @@
 package org.ericsson.sonar.plugin.batch;
 
+import org.ericsson.sonar.plugin.CustomSonarPlugin;
 import org.ericsson.sonar.plugin.builder.SonarReport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,12 +24,18 @@ public class SonarReportJob implements org.sonar.api.batch.PostJob,
 	}
 
 	public boolean shouldExecuteOnProject(Project project) {
+		
 		return Boolean.TRUE;
 	}
 
 	public void executeOn(Project project, SensorContext context) {
 		LOG.info("Inside the test custom plugin");
-		SonarReport report = new SonarReport();
+		LOG.info("Inside the test custom plugin:"+settings.getProperties());
+		LOG.info("password:"+settings.getProperties().get(CustomSonarPlugin.PASSWORD));
+		LOG.info("password:"+settings.getProperties().get(CustomSonarPlugin.FLAG));
+		LOG.info("password:"+settings.getProperties().get(CustomSonarPlugin.MAIL_IDS));
+		LOG.info("password:"+settings.getProperties().get(CustomSonarPlugin.SUBJECT));
+		SonarReport report = new SonarReport(settings);
 		report.generate();
 		
 	}

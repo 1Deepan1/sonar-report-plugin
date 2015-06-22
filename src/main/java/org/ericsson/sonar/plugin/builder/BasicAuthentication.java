@@ -2,10 +2,13 @@ package org.ericsson.sonar.plugin.builder;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+
 import javax.ws.rs.client.ClientRequestContext;
 import javax.ws.rs.client.ClientRequestFilter;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.xml.bind.DatatypeConverter;
+
+import org.ericsson.sonar.exception.SonarReporException;
 
 public class BasicAuthentication implements ClientRequestFilter {
 
@@ -29,7 +32,7 @@ public class BasicAuthentication implements ClientRequestFilter {
         try {
             return "BASIC " + DatatypeConverter.printBase64Binary(token.getBytes("UTF-8"));
         } catch (UnsupportedEncodingException ex) {
-            throw new IllegalStateException("Cannot encode with UTF-8", ex);
+            throw new SonarReporException("Cannot encode with UTF-8", ex);
         }
     }
 }

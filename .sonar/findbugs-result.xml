@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1" sequence="0" timestamp="1434956937000" analysisTimestamp="1434957099317" release="">
+  <Project>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/exception/SonarReporException.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/CustomSonarPlugin.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/batch/SonarReportJob.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/BasicAuthentication.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarClient.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarMetrics.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarReport.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarResources.java</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/exception/SonarReporException.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/CustomSonarPlugin.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/batch/SonarReportJob.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/builder/BasicAuthentication.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/builder/SonarClient.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/builder/SonarMetrics.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/builder/SonarReport.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/builder/SonarResources.class</Jar>
+    <Jar>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes/org/ericsson/sonar/plugin/builder/SonarResources$GetResourcesTask.class</Jar>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/classes</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/javassist-3.18.1-GA.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/osgi-resource-locator-1.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/hk2-api-2.4.0-b12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/aopalliance-repackaged-2.4.0-b12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/jersey-common-2.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/javax.inject-2.4.0-b12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/javax.ws.rs-api-2.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/jersey-client-2.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/jersey-guava-2.18.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/hk2-locator-2.4.0-b12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/javax.annotation-api-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/hk2-utils-2.4.0-b12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/target/sonar-report-plugin-0.0.1-SNAPSHOT/META-INF/lib/json-20140107.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/.sonar/findbugs/annotations.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/.sonar/findbugs/jsr305.jar</AuxClasspathEntry>
+    <WrkDir>/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/.sonar</WrkDir>
+  </Project>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" instanceHash="1abc6e579b9022e3afa739dcf7a6f488" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method may fail to close stream</ShortMessage>
+    <LongMessage>new org.ericsson.sonar.plugin.builder.SonarClient() may fail to close stream</LongMessage>
+    <Class classname="org.ericsson.sonar.plugin.builder.SonarClient" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarClient" start="20" end="40" sourcefile="SonarClient.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarClient.java">
+        <Message>At SonarClient.java:[lines 20-40]</Message>
+      </SourceLine>
+      <Message>In class org.ericsson.sonar.plugin.builder.SonarClient</Message>
+    </Class>
+    <Method classname="org.ericsson.sonar.plugin.builder.SonarClient" name="&lt;init&gt;" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarClient" start="20" end="31" startBytecode="0" endBytecode="33" sourcefile="SonarClient.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarClient.java"/>
+      <Message>In method new org.ericsson.sonar.plugin.builder.SonarClient()</Message>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="45" end="363" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java">
+        <Message>At InputStream.java:[lines 45-363]</Message>
+      </SourceLine>
+      <Message>Need to close java.io.InputStream </Message>
+    </Type>
+    <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarClient" primary="true" start="23" end="23" startBytecode="18" endBytecode="18" sourcefile="SonarClient.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarClient.java">
+      <Message>At SonarClient.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="bdfde1142cf98f4c44b76fd01ad3f336" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field org.ericsson.sonar.plugin.builder.SonarMetrics.factory from instance method new org.ericsson.sonar.plugin.builder.SonarMetrics()</LongMessage>
+    <Class classname="org.ericsson.sonar.plugin.builder.SonarMetrics" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" start="29" end="63" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java">
+        <Message>At SonarMetrics.java:[lines 29-63]</Message>
+      </SourceLine>
+      <Message>In class org.ericsson.sonar.plugin.builder.SonarMetrics</Message>
+    </Class>
+    <Method classname="org.ericsson.sonar.plugin.builder.SonarMetrics" name="&lt;init&gt;" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" start="29" end="33" startBytecode="0" endBytecode="73" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java"/>
+      <Message>In method new org.ericsson.sonar.plugin.builder.SonarMetrics()</Message>
+    </Method>
+    <Field classname="org.ericsson.sonar.plugin.builder.SonarMetrics" name="factory" signature="Ljavax/xml/xpath/XPathFactory;" isStatic="true" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java">
+        <Message>In SonarMetrics.java</Message>
+      </SourceLine>
+      <Message>Field org.ericsson.sonar.plugin.builder.SonarMetrics.factory</Message>
+    </Field>
+    <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" primary="true" start="30" end="30" startBytecode="7" endBytecode="7" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java">
+      <Message>At SonarMetrics.java:[line 30]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="2" rank="17" abbrev="ST" category="STYLE" instanceHash="2ace1c960c00f34d3e20d2c145859905" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Write to static field from instance method</ShortMessage>
+    <LongMessage>Write to static field org.ericsson.sonar.plugin.builder.SonarMetrics.xpath from instance method new org.ericsson.sonar.plugin.builder.SonarMetrics()</LongMessage>
+    <Class classname="org.ericsson.sonar.plugin.builder.SonarMetrics" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" start="29" end="63" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java">
+        <Message>At SonarMetrics.java:[lines 29-63]</Message>
+      </SourceLine>
+      <Message>In class org.ericsson.sonar.plugin.builder.SonarMetrics</Message>
+    </Class>
+    <Method classname="org.ericsson.sonar.plugin.builder.SonarMetrics" name="&lt;init&gt;" signature="()V" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" start="29" end="33" startBytecode="0" endBytecode="73" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java"/>
+      <Message>In method new org.ericsson.sonar.plugin.builder.SonarMetrics()</Message>
+    </Method>
+    <Field classname="org.ericsson.sonar.plugin.builder.SonarMetrics" name="xpath" signature="Ljavax/xml/xpath/XPath;" isStatic="true" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java">
+        <Message>In SonarMetrics.java</Message>
+      </SourceLine>
+      <Message>Field org.ericsson.sonar.plugin.builder.SonarMetrics.xpath</Message>
+    </Field>
+    <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarMetrics" primary="true" start="31" end="31" startBytecode="16" endBytecode="16" sourcefile="SonarMetrics.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarMetrics.java">
+      <Message>At SonarMetrics.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="9d019f5647d721765a4b1b673a69fe75" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.ericsson.sonar.plugin.builder.SonarResources(String[]) may expose internal representation by storing an externally mutable object into SonarResources.metrics</LongMessage>
+    <Class classname="org.ericsson.sonar.plugin.builder.SonarResources" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources" start="13" end="27" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+        <Message>At SonarResources.java:[lines 13-27]</Message>
+      </SourceLine>
+      <Message>In class org.ericsson.sonar.plugin.builder.SonarResources</Message>
+    </Class>
+    <Method classname="org.ericsson.sonar.plugin.builder.SonarResources" name="&lt;init&gt;" signature="([Ljava/lang/String;)V" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources" start="13" end="15" startBytecode="0" endBytecode="69" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java"/>
+      <Message>In method new org.ericsson.sonar.plugin.builder.SonarResources(String[])</Message>
+    </Method>
+    <Field classname="org.ericsson.sonar.plugin.builder.SonarResources" name="metrics" signature="[Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+        <Message>In SonarResources.java</Message>
+      </SourceLine>
+      <Message>Field org.ericsson.sonar.plugin.builder.SonarResources.metrics</Message>
+    </Field>
+    <LocalVariable name="metrics" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named metrics</Message>
+    </LocalVariable>
+    <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources" primary="true" start="14" end="14" startBytecode="6" endBytecode="6" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+      <Message>At SonarResources.java:[line 14]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="e9d79cff4af92fab9723e8ae8936d2b4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask(SonarResources, String[], int, int) may expose internal representation by storing an externally mutable object into SonarResources$GetResourcesTask.metrics</LongMessage>
+    <Class classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" start="1" end="80" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+        <Message>At SonarResources.java:[lines 1-80]</Message>
+      </SourceLine>
+      <Message>In class org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask</Message>
+    </Class>
+    <Method classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" name="&lt;init&gt;" signature="(Lorg/ericsson/sonar/plugin/builder/SonarResources;[Ljava/lang/String;II)V" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" start="37" end="43" startBytecode="0" endBytecode="147" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java"/>
+      <Message>In method new org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask(SonarResources, String[], int, int)</Message>
+    </Method>
+    <Field classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" name="metrics" signature="[Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+        <Message>In SonarResources.java</Message>
+      </SourceLine>
+      <Message>Field org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask.metrics</Message>
+    </Field>
+    <LocalVariable name="metrics" register="2" pc="11" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named metrics</Message>
+    </LocalVariable>
+    <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" primary="true" start="38" end="38" startBytecode="11" endBytecode="11" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+      <Message>At SonarResources.java:[line 38]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" instanceHash="10a6675a70e49420c38b39df888136d3" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+    <ShortMessage>Method concatenates strings using + in a loop</ShortMessage>
+    <LongMessage>org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask.computeDirectly() concatenates strings using + in a loop</LongMessage>
+    <Class classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" start="1" end="80" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+        <Message>At SonarResources.java:[lines 1-80]</Message>
+      </SourceLine>
+      <Message>In class org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask</Message>
+    </Class>
+    <Method classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" name="computeDirectly" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" start="73" end="80" startBytecode="0" endBytecode="221" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java"/>
+      <Message>In method org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask.computeDirectly()</Message>
+    </Method>
+    <SourceLine classname="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" primary="true" start="77" end="77" startBytecode="57" endBytecode="57" sourcefile="SonarResources.java" sourcepath="org/ericsson/sonar/plugin/builder/SonarResources.java">
+      <Message>At SonarResources.java:[line 77]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="OS_OPEN_STREAM" abbrev="OS" category="BAD_PRACTICE">
+    <ShortDescription>Method may fail to close stream</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method creates an IO stream object, does not assign it to any
+fields, pass it to other methods that might close it,
+or return it, and does not appear to close
+the stream on all paths out of the method.&nbsp; This may result in
+a file descriptor leak.&nbsp; It is generally a good
+idea to use a <code>finally</code> block to ensure that streams are
+closed.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="SBSC_USE_STRINGBUFFER_CONCATENATION" abbrev="SBSC" category="PERFORMANCE">
+    <ShortDescription>Method concatenates strings using + in a loop</ShortDescription>
+    <Details><![CDATA[
+
+<p> The method seems to be building a String using concatenation in a loop.
+In each iteration, the String is converted to a StringBuffer/StringBuilder,
+   appended to, and converted back to a String.
+   This can lead to a cost quadratic in the number of iterations,
+   as the growing string is recopied in each iteration. </p>
+
+<p>Better performance can be obtained by using
+a StringBuffer (or StringBuilder in Java 1.5) explicitly.</p>
+
+<p> For example:</p>
+<pre>
+  // This is bad
+  String s = "";
+  for (int i = 0; i &lt; field.length; ++i) {
+    s = s + field[i];
+  }
+
+  // This is better
+  StringBuffer buf = new StringBuffer();
+  for (int i = 0; i &lt; field.length; ++i) {
+    buf.append(field[i]);
+  }
+  String s = buf.toString();
+</pre>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" abbrev="ST" category="STYLE">
+    <ShortDescription>Write to static field from instance method</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This instance method writes to a static field. This is tricky to get
+correct if multiple instances are being manipulated,
+and generally bad practice.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="SBSC">
+    <Description>String concatenation in loop using + operator</Description>
+  </BugCode>
+  <BugCode abbrev="ST">
+    <Description>Misuse of static fields</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <BugCode abbrev="OS">
+    <Description>Stream not closed on all paths</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="6">
+    <MissingClass>org.apache.log4j.Logger</MissingClass>
+    <MissingClass>org.slf4j.Logger</MissingClass>
+    <MissingClass>org.slf4j.LoggerFactory</MissingClass>
+    <MissingClass>org.sonar.api.SonarPlugin</MissingClass>
+    <MissingClass>org.sonar.api.batch.PostJob</MissingClass>
+    <MissingClass>org.sonar.api.config.Settings</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Mon, 22 Jun 2015 12:38:57 +0530" total_classes="9" referenced_classes="91" total_bugs="6" total_size="182" num_packages="4" java_version="1.7.0_60" vm_version="24.60-b09" cpu_seconds="13.36" clock_seconds="4.48" peak_mbytes="450.46" alloc_mbytes="1749.50" gc_seconds="0.00" priority_2="6">
+    <FileStats path="org/ericsson/sonar/exception/SonarReporException.java" bugCount="0" size="14"/>
+    <FileStats path="org/ericsson/sonar/plugin/CustomSonarPlugin.java" bugCount="0" size="11"/>
+    <FileStats path="org/ericsson/sonar/plugin/batch/SonarReportJob.java" bugCount="0" size="23"/>
+    <FileStats path="org/ericsson/sonar/plugin/builder/BasicAuthentication.java" bugCount="0" size="18"/>
+    <FileStats path="org/ericsson/sonar/plugin/builder/SonarClient.java" bugCount="1" size="24" bugHash="53ec43c43309dd6af7202e363fd9151b"/>
+    <FileStats path="org/ericsson/sonar/plugin/builder/SonarMetrics.java" bugCount="2" size="24" bugHash="98579b0e78c7ba7549077949b476c1e9"/>
+    <FileStats path="org/ericsson/sonar/plugin/builder/SonarReport.java" bugCount="0" size="17"/>
+    <FileStats path="org/ericsson/sonar/plugin/builder/SonarResources.java" bugCount="3" size="51" bugHash="ec11545719e915c98ee45d96e29c6ec3"/>
+    <PackageStats package="org.ericsson.sonar.exception" total_bugs="0" total_types="1" total_size="14">
+      <ClassStats class="org.ericsson.sonar.exception.SonarReporException" sourceFile="SonarReporException.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.ericsson.sonar.plugin" total_bugs="0" total_types="1" total_size="11">
+      <ClassStats class="org.ericsson.sonar.plugin.CustomSonarPlugin" sourceFile="CustomSonarPlugin.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.ericsson.sonar.plugin.batch" total_bugs="0" total_types="1" total_size="23">
+      <ClassStats class="org.ericsson.sonar.plugin.batch.SonarReportJob" sourceFile="SonarReportJob.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.ericsson.sonar.plugin.builder" total_bugs="6" total_types="6" total_size="134" priority_2="6">
+      <ClassStats class="org.ericsson.sonar.plugin.builder.BasicAuthentication" sourceFile="BasicAuthentication.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="org.ericsson.sonar.plugin.builder.SonarClient" sourceFile="SonarClient.java" interface="false" size="24" bugs="1" priority_2="1"/>
+      <ClassStats class="org.ericsson.sonar.plugin.builder.SonarMetrics" sourceFile="SonarMetrics.java" interface="false" size="24" bugs="2" priority_2="2"/>
+      <ClassStats class="org.ericsson.sonar.plugin.builder.SonarReport" sourceFile="SonarReport.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="org.ericsson.sonar.plugin.builder.SonarResources" sourceFile="SonarResources.java" interface="false" size="14" bugs="1" priority_2="1"/>
+      <ClassStats class="org.ericsson.sonar.plugin.builder.SonarResources$GetResourcesTask" sourceFile="SonarResources.java" interface="false" size="37" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="423" invocations="580" avgMicrosecondsPerInvocation="730" maxMicrosecondsPerInvocation="18946" standardDeviationMircosecondsPerInvocation="1818"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="329" invocations="91" avgMicrosecondsPerInvocation="3620" maxMicrosecondsPerInvocation="41189" standardDeviationMircosecondsPerInvocation="7080"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="319" invocations="270" avgMicrosecondsPerInvocation="1182" maxMicrosecondsPerInvocation="7982" standardDeviationMircosecondsPerInvocation="1298"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="302" invocations="91" avgMicrosecondsPerInvocation="3323" maxMicrosecondsPerInvocation="40502" standardDeviationMircosecondsPerInvocation="7008"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="115" invocations="91" avgMicrosecondsPerInvocation="1266" maxMicrosecondsPerInvocation="12402" standardDeviationMircosecondsPerInvocation="2326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="100" invocations="91" avgMicrosecondsPerInvocation="1099" maxMicrosecondsPerInvocation="6031" standardDeviationMircosecondsPerInvocation="1331"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="86" invocations="91" avgMicrosecondsPerInvocation="949" maxMicrosecondsPerInvocation="11619" standardDeviationMircosecondsPerInvocation="1940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="85" invocations="31" avgMicrosecondsPerInvocation="2766" maxMicrosecondsPerInvocation="21093" standardDeviationMircosecondsPerInvocation="4414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="79" invocations="30" avgMicrosecondsPerInvocation="2635" maxMicrosecondsPerInvocation="11851" standardDeviationMircosecondsPerInvocation="2998"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="78" invocations="583" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="502" standardDeviationMircosecondsPerInvocation="50"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="77" invocations="527" avgMicrosecondsPerInvocation="147" maxMicrosecondsPerInvocation="2156" standardDeviationMircosecondsPerInvocation="273"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="75" invocations="33" avgMicrosecondsPerInvocation="2273" maxMicrosecondsPerInvocation="13240" standardDeviationMircosecondsPerInvocation="3250"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="73" invocations="91" avgMicrosecondsPerInvocation="812" maxMicrosecondsPerInvocation="8823" standardDeviationMircosecondsPerInvocation="1392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="71" invocations="33" avgMicrosecondsPerInvocation="2165" maxMicrosecondsPerInvocation="13428" standardDeviationMircosecondsPerInvocation="3133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="71" invocations="139" avgMicrosecondsPerInvocation="512" maxMicrosecondsPerInvocation="17384" standardDeviationMircosecondsPerInvocation="1590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="70" invocations="91" avgMicrosecondsPerInvocation="777" maxMicrosecondsPerInvocation="7173" standardDeviationMircosecondsPerInvocation="1367"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="61" invocations="30" avgMicrosecondsPerInvocation="2045" maxMicrosecondsPerInvocation="10454" standardDeviationMircosecondsPerInvocation="2718"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="58" invocations="91" avgMicrosecondsPerInvocation="638" maxMicrosecondsPerInvocation="5248" standardDeviationMircosecondsPerInvocation="1069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="55" invocations="31" avgMicrosecondsPerInvocation="1801" maxMicrosecondsPerInvocation="49706" standardDeviationMircosecondsPerInvocation="8747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.EqualsOperandShouldHaveClassCompatibleWithThis" totalMilliseconds="52" invocations="91" avgMicrosecondsPerInvocation="572" maxMicrosecondsPerInvocation="5213" standardDeviationMircosecondsPerInvocation="932"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -5,12 +5,14 @@ import java.util.concurrent.RecursiveTask;
 
 import javax.ws.rs.core.MediaType;
 
+import org.sonar.api.config.Settings;
+
 public class SonarResources extends SonarClient {
 
 	private String[] metrics;
 
-	public SonarResources(String[] metrics) {
-		super();
+	public SonarResources(String[] metrics,Settings settings) {
+		super(settings);
 		this.metrics = metrics;
 	}
 
@@ -22,7 +24,7 @@ public class SonarResources extends SonarClient {
 	}
 
 	public String getAllResources() {
-		final ForkJoinPool pool = new ForkJoinPool(4);
+		final ForkJoinPool pool = new ForkJoinPool();
 		final GetResourcesTask resources = new GetResourcesTask(metrics);
 		return (pool.invoke(resources));
 	}
