@@ -24,26 +24,34 @@ public class SendEmail {
 	}
 
 	public void sendEmail() {
-		//TBD: All these properties are to be read from settings
-		// Recipient's email ID needs to be mentioned.
-		String to = "ekta.chawla@gmail.com";
+		// Recipient's email ID list
+		String toList = settings.getProperties().get(
+				"sonar.custom.report.emailids");
+		// Sender's email ID
+		String from = settings.getProperties().get("email.from");
+		//SMTP server host
+		String host = settings.getProperties().get("email.smtp_host.secured");
+		//SMTP server port
+		String port = settings.getProperties().get("email.smtp_port.secured");
+		// Email Subject
+		String subject = settings.getProperties().get(
+				"sonar.custom.report.subject");
 
-		// Sender's email ID needs to be mentioned
-		String from = "ekta.chawla@gmail.com";
-
-		// Assuming you are sending email from localhost
-		String host = "smtp.gmail.com";
-
+		// Hard coded values for testing
+		// toList = "ekta.chawla@ericsson.com";
+		// from = "No Reply <noreply@ericsson.com>";//change accordingly
+		// host = "smtp.internal.ericsson.com";
+		// port = "25";
+		// subject = "sub";
+		
 		// Get system properties
 		Properties properties = System.getProperties();
 
 		// Setup mail server
-		properties.setProperty("mail.smtp.host", host);
-		properties.setProperty("mail.smtp.port", "587");
-
+		properties.put("mail.smtp.host", host);
+		properties.put("mail.smtp.port", port);
 		// Get the default Session object.
 		Session session = Session.getDefaultInstance(properties);
-		LOG.info("here");
 		try {
 			// Create a default MimeMessage object.
 			MimeMessage message = new MimeMessage(session);
@@ -52,11 +60,11 @@ public class SendEmail {
 			message.setFrom(new InternetAddress(from));
 
 			// Set To: header field of the header.
-			message.addRecipient(Message.RecipientType.TO, new InternetAddress(
-					to));
+			message.addRecipients(Message.RecipientType.TO,
+					InternetAddress.parse(toList));
 
 			// Set Subject: header field
-			message.setSubject("This is the Subject Line!");
+			message.setSubject(subject);
 
 			// Create the message part
 			BodyPart messageBodyPart = new MimeBodyPart();
@@ -64,7 +72,7 @@ public class SendEmail {
 			// Fill the message
 			message.setText("This is message body");
 			LOG.info("here here");
-			//TBD: For Attachment
+			// TBD: For Attachment
 			// Create a multipar message
 			// Multipart multipart = new MimeMultipart();
 			//
@@ -85,10 +93,20 @@ public class SendEmail {
 			LOG.info("here here here");
 			// Send message
 			Transport.send(message);
+
 			LOG.info("Sent message successfully....");
 		} catch (MessagingException mex) {
-			LOG.error("MessagingException occured in sendEmail() : " + mex.getMessage());
+			LOG.error("MessagingException occured in sendEmail() : "
+					+ mex.getMessage());
 			mex.printStackTrace();
 		}
 	}
+
+	/*public static void main(String[] args) {		
+		SendEmail se = new SendEmail(new Settings());
+		se.sendEmail();
+		System.out.println("Mail sent Successfully");
+
+	}*/
+
 }
