@@ -7,7 +7,7 @@
 	<artifactId>sonar-report-plugin</artifactId>
 	<packaging>sonar-plugin</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Custom Plugin</name>
+	<name>Sonar Report Plugin</name>
 	<description>Plugin description will be displayed in SonarQube</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -29,6 +29,7 @@ public class SonarReportJob implements org.sonar.api.batch.PostJob,
 	}
 
 	public void executeOn(Project project, SensorContext context) {
+		
 		LOG.info("Inside the test custom plugin");
 		LOG.info("Inside the test custom plugin:"+settings.getProperties());
 		LOG.info("password:"+settings.getProperties().get(CustomSonarPlugin.PASSWORD));
