@@ -21,12 +21,19 @@
 					;
 					var t5 =
 					8;
+
 					var data = [t1,t2,t3,t4,t5];
-					var labels =
-					['Blocker','Critical','Major','Minor','Info'];
+
+					var labels = ['Blocker','Critical','Major','Minor','Info'];
           
            for (var i=0; i<data.length; ++i) {
+                if(data[i]!="0"){
+                   alert(""+data[i]);
                 labels[i] = labels[i] + ', ' + data[i];
+                }else{
+                labels[i]="";
+                
+                }
             }
 
 					var pie = new RGraph.Pie({
@@ -162,6 +169,15 @@
 <td>1d 1h</td><td>71</td>
 </tr>
 </tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>
+<canvas id="cvs"></canvas>
+</th>
+</tr>
+</thead>
 </table>
 </div>
 </div>

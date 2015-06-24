@@ -5,43 +5,64 @@
 <script src="../../../js/jquery.min.js"></script><script src="../../../js/RGraph.common.core.js"></script><script src="../../../js/RGraph.common.tooltips.js"></script><script src="../../../js/RGraph.common.dynamic.js"></script><script src="../../../js/RGraph.pie.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <title>Pie Chart</title>
 <script language="javascript">
-        $(document).ready(function ()
-        {
-        	var t1 = 0;
-            var t2 = 0;
-            var t3 = 11;
-            var t4 = 52;
-            var t5 = 8;
-            var data     = [t1,t2,t3,t4,t5];
-            var labels   = ['Blocker','Critical','Major','Minor','Info'];
+					$(document).ready(function ()
+					{
+					var t1 =
+					0
+					;
+					var t2 =
+					0
+					;
+					var t3 =
+					11
+					;
+					var t4 =
+					52
+					;
+					var t5 =
+					8;
+
+					var data = [t1,t2,t3,t4,t5];
+
+					var labels = ['Blocker','Critical','Major','Minor','Info'];
           
            for (var i=0; i<data.length; ++i) {
+                if(data[i]!="0"){
+                   alert(""+data[i]);
                 labels[i] = labels[i] + ', ' + data[i];
+                }else{
+                labels[i]="";
+                
+                }
             }
 
-            var pie = new RGraph.Pie({
-                id: 'cvs',
-                data: data,
-                options: {
-                    labels: labels,
-                    tooltips: labels,
-                    colors: ['#EC0033','#A0D300','#FFCD00','#00B869','#999999'],
-                    strokestyle: 'white',
-                    linewidth: 0,
-                    shadow: {
-                        offsetx: 2,
-                        offsety: 2,
-                        blur: 3
-                    },
-                    exploded: 8
-                }
-            }).draw()
-        })
-    </script>
+					var pie = new RGraph.Pie({
+					id: 'cvs',
+					data: data,
+					options: {
+					labels:
+					labels,
+					tooltips: labels,
+					colors:
+					['#EC0033','#A0D300','#FFCD00','#00B869','#999999'],
+					strokestyle:
+					'white',
+					linewidth: 0,
+					shadow: {
+					offsetx: 2,
+					offsety: 2,
+					blur: 3
+					},
+					exploded: 8
+					}
+					}).draw()
+					})
+				</script>
 </head>
 <body>
-<div class="page-header">
-<h1>Sonar-Report-Plugin : Main Dashboard</h1>
+<div class="container">
+<div class="jumbotron">
+<h2>Sonar-Report-Plugin : Main Dashboard</h2>
 </div>
 <div class="row">
 <div class="col-sm-4">
@@ -62,39 +83,132 @@
 </tr>
 </tbody>
 </table>
-<table border="0" cellpadding="5" cellspacing="5">
-<tr>
-<td>
-<h4>Directories</h4>
-</td><td>
-<h4>Lines</h4>
-</td><td>
-<h4>Classes</h4>
-</td><td>
-<h4>Statements</h4>
-</td><td>
-<h4>Accessors</h4>
-</td>
-</tr>
-<tr>
-<td>18</td><td>1,203</td><td>32</td><td>198</td><td>52</td>
-</tr>
-</table>
 <table class="table">
 <thead>
 <tr>
-<th>#</th><th>First Name</th><th>Last Name</th><th>Username</th>
+<th>Directories</th><th>Lines</th><th>Classes </th><th>Statements </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td><td>Mark</td><td>Otto</td><td>@mdo</td>
+<td>18</td><td>1,203</td><td>32</td><td>198</td>
 </tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
 <tr>
-<td>2</td><td>Jacob</td><td>Thornton</td><td>@fat</td>
+<th>Accessors</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>3</td><td>Larry</td><td>the Bird</td><td>@twitter</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Panel title</h3>
+</div>
+<div class="panel-body">
+<table class="table">
+<thead>
+<tr>
+<th>Duplications</th><th>Lines</th><th>Blocks</th><th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.0%</td><td>0</td><td>0</td><td>0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Panel title</h3>
+</div>
+<div class="panel-body">
+<table class="table">
+<thead>
+<tr>
+<th>Complexity</th><th>/Function</th><th>/Class</th><th>/File</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>80</td><td>1.7</td><td>2.5</td><td>2.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Panel title</h3>
+</div>
+<div class="panel-body">
+<table class="table">
+<thead>
+<tr>
+<th>Debt</th><th>Issues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1d 1h</td><td>71</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>
+<canvas id="cvs"></canvas>
+</th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title">Panel title</h3>
+</div>
+<div class="panel-body">
+<table class="table">
+<thead>
+<tr>
+<th>Unit test success</th><th>failures</th><th>Errors</th><th>Tests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100.0%</td><td>0</td><td>0</td><td>9</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<thead>
+<tr>
+<th>Execution Time</th><th>skipped unit tests</th><th>Coverage by unit tests</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.4 sec</td><td></td><td></td>
 </tr>
 </tbody>
 </table>
@@ -102,96 +216,6 @@
 </div>
 </div>
 </div>
-<div class="container">
-<div class="row row-offcanvas row-offcanvas-right">
-<div class="col-xs-12 col-sm-9">
-<div class="jumbotron">
-<h3>Sonar-Report-Plugin</h3>
 </div>
-<div class="row">
-<div class="col-xs-12 col-lg-4 jumbotron">
-<p>
-<table border="0" cellpadding="10" cellspacing="10" width="100%">
-<tr>
-<td colspan="5">
-<h4>Lines of code</h4>
-</td><td colspan="2">
-<h4>Files</h4>
-</td><td colspan="3">
-<h4>Functions</h4>
-</td>
-</tr>
-<tr>
-<td colspan="5">743</td><td colspan="2">32</td><td colspan="3">47</td>
-</tr>
-</table>
-<table border="0" cellpadding="5" cellspacing="5" width="100%">
-<tr>
-<td colspan="2" rowspan="2">
-<h4>Java</h4>
-</td><td>
-<h4>Directories</h4>
-</td><td>
-<h4>Lines</h4>
-</td><td>
-<h4>Classes</h4>
-</td><td>
-<h4>Statements</h4>
-</td><td>
-<h4>Accessors</h4>
-</td>
-</tr>
-<tr>
-<td>18</td><td>1,203</td><td>32</td><td>198</td><td>52</td>
-</tr>
-</table>
-</p>
-</div>
-<div class="col-xs-6 col-lg-4 jumbotron">
-<p>
-<table border="0" cellpadding="5" cellspacing="5">
-<tr>
-<td>Duplications</td><td>Lines</td><td>Blocks</td><td>Files</td>
-</tr>
-<tr>
-<td>0.0%</td><td>0</td><td>0</td><td>0</td>
-</tr>
-</table>
-</p>
-</div>
-</div>
-</div>
-</div>
-<footer>
-<p> Company 2014</p>
-</footer>
-</div>
-<h1>Main Dashboard</h1>
-<table border="0" cellpadding="5" cellspacing="5">
-<tr>
-<td>Complexity</td><td>/Function</td><td>/Class</td><td>/File</td>
-</tr>
-<tr>
-<td>80</td><td>1.7</td><td>2.5</td><td>2.5</td>
-</tr>
-</table>
-<table border="0" cellpadding="5" cellspacing="5">
-<tr>
-<td rowspan="2">
-<canvas id="cvs" width="600" height="250" style="border: 1px solid #ccc"></canvas>
-</td><td>Debt</td><td>Issues</td>
-</tr>
-<tr>
-<td>1d 1h</td><td>71</td>
-</tr>
-</table>
-<table border="0" cellpadding="5" cellspacing="5">
-<tr>
-<td>Unit test success</td><td>failures</td><td>Errors</td><td>Tests</td><td>Execution Time</td><td>skipped unit tests</td><td>Coverage by unit tests</td>
-</tr>
-<tr>
-<td>100.0%</td><td>0</td><td>0</td><td>9</td><td>2.4 sec</td><td></td><td></td>
-</tr>
-</table>
 </body>
 </html>

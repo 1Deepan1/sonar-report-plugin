@@ -2,7 +2,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	version="1.0">
 	<xsl:template match="/">
-
 		<html>
 			<head>
 				<link rel="stylesheet"
@@ -40,12 +39,19 @@
 					var t5 =
 					<xsl:value-of
 						select="//resource/msr[key/text()='info_violations']/frmt_val/text()" />;
+
 					var data = [t1,t2,t3,t4,t5];
-					var labels =
-					['Blocker','Critical','Major','Minor','Info'];
+
+					var labels = ['Blocker','Critical','Major','Minor','Info'];
           
            <![CDATA[for (var i=0; i<data.length; ++i) {
+                if(data[i]!="0"){
+                   alert(""+data[i]);
                 labels[i] = labels[i] + ', ' + data[i];
+                }else{
+                labels[i]="";
+                
+                }
             }]]>
 
 					var pie = new RGraph.Pie({
@@ -265,6 +271,18 @@
 
 											</tr>
 										</tbody>
+									</table>
+									<table>
+										<thead>
+											<tr>
+												<th>
+													<canvas id="cvs">
+
+													</canvas>
+												</th>
+
+											</tr>
+										</thead>
 									</table>
 
 								</div>
