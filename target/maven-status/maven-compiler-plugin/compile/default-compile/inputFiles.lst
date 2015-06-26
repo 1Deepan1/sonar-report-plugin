@@ -1,0 +1,12 @@
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/batch/TransInfoHtml.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/CustomSonarPlugin.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/util/SendEmail.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/batch/SonarReportJob.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarResources.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/Configuration.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarReport.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/BasicAuthentication.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarMetrics.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarTimeMachine.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/exception/SonarReporException.java
+/home/emdekum/deepan/studies/springs-1/workspace/1/sonar-report-plugin/src/main/java/org/ericsson/sonar/plugin/builder/SonarClient.java
