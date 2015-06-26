@@ -80,7 +80,7 @@
 			<body>
 				<div class="container">
 					<div class="jumbotron">
-						<h2>Sonar-Report-Plugin : Main Dashboard</h2>
+						<h2><xsl:value-of select="/final/resources[1]/resource/name/text()" /> : Main Dashboard</h2>
 					</div>
 					<div class="row">
 						<div class="col-sm-4">

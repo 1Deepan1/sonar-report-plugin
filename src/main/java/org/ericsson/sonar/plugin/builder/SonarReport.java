@@ -36,22 +36,17 @@ public class SonarReport {
 		SonarMetrics sonarMetrics = new SonarMetrics(settings);
 		String[] metrics = sonarMetrics.getMetricsName();
 		SonarResources sonarResources = new SonarResources(metrics,settings);
-		String projectHome = settings.getProperties().get("sonar.projectHome");		
-		String sonarPath = projectHome+File.separator+".sonar";
-		File sonarDir = new File(sonarPath);
-		if(!sonarDir.exists()){
-			sonarDir.mkdir();
-		}
 		StreamSource source = new StreamSource(new StringReader("<final>" + sonarResources.getAllResources()+ "</final>"));
-		generateHtml(source, sonarPath);
+		generateHtml(source);
 	}
 	
-	public void generateHtml(StreamSource xmlSource, String sonarPath){
+	public void generateHtml(StreamSource xmlSource){
 		try {		
+			String projectHome = settings.getProperties().get("sonar.working.directory");
 			String projectName = settings.getProperties().get("sonar.projectName");
 			TransformerFactory tFactory=TransformerFactory.newInstance();
 			Source xslDoc=new StreamSource("resources/Sonar-Report.xsl");
-			String outputFileName=sonarPath+File.separator+projectName+"_Report.html";
+			String outputFileName=projectHome+File.separator+projectName+"_Report.html";
 
 			OutputStream htmlFile=new FileOutputStream(outputFileName);
 			Transformer trasform=tFactory.newTransformer(xslDoc);
