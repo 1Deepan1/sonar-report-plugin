@@ -4,14 +4,8 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" 
-					/> -->
-				<!-- <link rel="stylesheet" href="../../../js/bootstrap.css" /> -->
-				<?wrapper html
-      <html>
-        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-      </html>
-    ?><xsl:copy-of select="document('bootstrap.css')//processing-instruction()"/>
+				<link rel="stylesheet"
+					href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 				<script src="../../../js/jquery.min.js"></script>
 				<script src="../../../js/RGraph.common.core.js"></script>
 				<script src="../../../js/RGraph.common.tooltips.js"></script>
@@ -21,7 +15,7 @@
 					src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-				<title>Report</title>
+				<title>Pie Chart</title>
 
 				<script language="javascript">
 					$(document).ready(function ()
@@ -48,11 +42,11 @@
 
 					var data = [t1,t2,t3,t4,t5];
 
-					var labels =
-					['Blocker','Critical','Major','Minor','Info'];
+					var labels = ['Blocker','Critical','Major','Minor','Info'];
           
            <![CDATA[for (var i=0; i<data.length; ++i) {
-                if(data[i]!="0"){                  
+                if(data[i]!="0"){
+                   alert(""+data[i]);
                 labels[i] = labels[i] + ', ' + data[i];
                 }else{
                 labels[i]="";

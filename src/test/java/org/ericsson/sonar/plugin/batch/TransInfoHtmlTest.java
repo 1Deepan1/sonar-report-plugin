@@ -1,6 +1,7 @@
 package org.ericsson.sonar.plugin.batch;
 
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
@@ -18,6 +19,7 @@ public class TransInfoHtmlTest {
 	public static void main(String args[]) {
 		try {		
 			System.out.println(System.getProperty("user.dir"));
+			
 			TransformerFactory tFactory=TransformerFactory.newInstance();
 
 			Source xslDoc=new StreamSource("src/test/resources/Sonar-Report.xsl");
