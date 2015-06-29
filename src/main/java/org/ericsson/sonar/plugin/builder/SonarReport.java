@@ -1,10 +1,14 @@
 package org.ericsson.sonar.plugin.builder;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.StringReader;
+import java.util.Scanner;
 
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
@@ -52,13 +56,60 @@ public class SonarReport {
 			OutputStream htmlFile=new FileOutputStream(outputFileName);
 			Transformer trasform=tFactory.newTransformer(xslDoc);
 			trasform.transform(xmlSource, new StreamResult(htmlFile));
+			
+			String cssString = readFile("resources/style.txt");
+			applyStyleSheet(outputFileName,cssString);
+			
 			log.info("Report generated in "+outputFileName);
+			
 			
 			SendEmail email = new SendEmail(settings);
 			email.sendEmail(outputFileName);
 		} 
 		catch (Exception e) {
 			throw new SonarReporException(e);
+		}
+	}
+	
+	private String readFile(String pathname) throws Exception {
+
+	    File file = new File(pathname);
+	    StringBuilder fileContents = new StringBuilder((int)file.length());
+	    Scanner scanner = new Scanner(file);
+	    String lineSeparator = System.getProperty("line.separator");
+
+	    try {
+	        while(scanner.hasNextLine()) {        
+	            fileContents.append(scanner.nextLine() + lineSeparator);
+	        }
+	        return fileContents.toString();
+	    } finally {
+	        scanner.close();
+	    }
+	}
+	
+	private void applyStyleSheet(String htmlFile, String cssString){
+		FileInputStream fis;
+		String input = "";
+		try {
+			fis = new FileInputStream(htmlFile);
+			BufferedReader in = new BufferedReader(new InputStreamReader(fis));
+
+			String aLine;
+			while ((aLine = in.readLine()) != null) {
+				if(aLine.startsWith("<replace>")){
+					input += cssString + System.lineSeparator();
+				}else{
+					input += aLine + System.lineSeparator();
+				}
+			}
+			in.close();
+			
+			 FileOutputStream os = new FileOutputStream(htmlFile);
+			 os.write(input.getBytes());
+			 os.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 

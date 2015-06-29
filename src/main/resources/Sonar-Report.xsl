@@ -4,15 +4,7 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet"
-					href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
-				<script src="../../../js/jquery.min.js"></script>
-				<script src="../../../js/RGraph.common.core.js"></script>
-				<script src="../../../js/RGraph.common.tooltips.js"></script>
-				<script src="../../../js/RGraph.common.dynamic.js"></script>
-				<script src="../../../js/RGraph.pie.js"></script>
-				<script
-					src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+				<replace></replace>
 
 
 				<title>Pie Chart</title>
