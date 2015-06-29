@@ -16,6 +16,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 import org.ericsson.sonar.exception.SonarReporException;
+import org.ericsson.sonar.plugin.util.SendEmail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.sonar.api.config.Settings;
@@ -52,6 +53,9 @@ public class SonarReport {
 			Transformer trasform=tFactory.newTransformer(xslDoc);
 			trasform.transform(xmlSource, new StreamResult(htmlFile));
 			log.info("Report generated in "+outputFileName);
+			
+			SendEmail email = new SendEmail(settings);
+			email.sendEmail(outputFileName);
 		} 
 		catch (Exception e) {
 			throw new SonarReporException(e);

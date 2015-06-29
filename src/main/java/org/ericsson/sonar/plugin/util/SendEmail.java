@@ -2,14 +2,19 @@ package org.ericsson.sonar.plugin.util;
 
 import java.util.Properties;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
+import javax.mail.Multipart;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,7 +28,7 @@ public class SendEmail {
 		this.settings = settings;
 	}
 
-	public void sendEmail() {
+	public void sendEmail(String attachFileName) {
 		// Recipient's email ID list
 		String toList = settings.getProperties().get(
 				"sonar.custom.report.emailids");
@@ -74,21 +79,20 @@ public class SendEmail {
 			LOG.info("here here");
 			// TBD: For Attachment
 			// Create a multipar message
-			// Multipart multipart = new MimeMultipart();
+			 Multipart multipart = new MimeMultipart();
 			//
 			// // Set text message part
-			// multipart.addBodyPart(messageBodyPart);
+			 multipart.addBodyPart(messageBodyPart);
 			//
 			// // Part two is attachment
-			// messageBodyPart = new MimeBodyPart();
-			// String filename = "file.txt";
-			// DataSource source = new FileDataSource(filename);
-			// messageBodyPart.setDataHandler(new DataHandler(source));
-			// messageBodyPart.setFileName(filename);
-			// multipart.addBodyPart(messageBodyPart);
+			 messageBodyPart = new MimeBodyPart();
+			 DataSource source = new FileDataSource(attachFileName);
+			 messageBodyPart.setDataHandler(new DataHandler(source));
+			 messageBodyPart.setFileName(attachFileName);
+			 multipart.addBodyPart(messageBodyPart);
 
 			// Send the complete message parts
-			// message.setContent(multipart );
+			 message.setContent(multipart );
 
 			LOG.info("here here here");
 			// Send message
